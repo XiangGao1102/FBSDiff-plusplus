@@ -6,3 +6,4 @@ With large-scale text-to-image (T2I) diffusion models achieving significant adva
 
 # Model overview
 ![](imgs/model_overview.jpg "method_overview")
+Our previous work proposes FBSDiff, a plug-and-play method adapting pretrained T2I diffusion model to the realm of text-driven I2I translation from the perspective of dynamic frequency band substitution. FBSDiff comprises an inversion trajectory, a reconstruction trajectory, and a sampling trajectory, where 
