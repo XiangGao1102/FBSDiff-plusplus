@@ -33,8 +33,17 @@ Our method requires the pre-trained Stable Diffusion model and the CLIP text enc
 
 # Run the code
 Our model is training-free, you can translate a given source image with a certain text prompt by directly running the following inference script:
-(1) for I2I application of derivative image generative achieved using low-FBS mode, run the **DCT_low_FBS_infer.py** script:
+(1) for I2I application of text-driven derivative image generative achieved using low-FBS mode, run the **DCT_low_FBS_infer.py** script:
 <pre><code>
 python DCT_low_FBS_infer.py
 </code></pre>
 
+(2) for I2I application of text-driven image style translation achieved using high-FBS mode, run the **DCT_high_FBS_infer.py** script:
+<pre><code>
+python DCT_high_FBS_infer.py
+</code></pre>
+
+(3) for I2I application of layout-guided text-driven I2I translation achieved using mid-FBS mode, run the **DCT_mid_FBS_infer.py** script:
+<pre><code>
+python DCT_mid_FBS_infer.py
+</code></pre>
