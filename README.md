@@ -10,4 +10,18 @@ Our previous work proposes FBSDiff, a plug-and-play method adapting pretrained T
 
 In contrary, FBSDiff++ improves upon FBSDiff in four aspects: (1) FBSDiff++ dispenses with the reconstruction trajectory by extracting guidance features from the inversion trajectory, and thus accelerates inference speed noticeably; (2) FBSDiff++ swaps the 2D-DCT-based FBS module for the AdaFBS module, which achieves the same goal of dynamic frequency band substitution via two successive 1D-DCT filtering steps along the feature height and width axes, allowing for input images of arbitrary aspect ratio rather than only the square images; (3) FBSDiff++ converts the absolute DCT filtering thresholds to the percentile-based relative ones, enabling the model to be adaptive to input images of arbitrary resolution; (4) FBSDiff++ extends model functionality to enable localized image manipulation and style-specific content creation for input images of arbitrary size.
 
-
+# Environment
+We use Anaconda environment with python 3.8 and pytorch 2.0, which can be built with the following commands: <br />
+First, create a new conda virtual environment: <br>
+<pre><code>
+conda create -n FBSDiff++ python=3.8
+</code></pre>
+Then, install pytorch using conda: <br>
+<pre><code>
+conda activate FBSDiff++
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+</code></pre>
+Last, install the required packages in the requirements.txt:
+<pre><code>
+pip install -r requirements.txt
+</code></pre>
