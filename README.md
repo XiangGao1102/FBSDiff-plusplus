@@ -37,13 +37,13 @@ Our model is training-free, you can translate a given source image with a certai
 <pre><code>
 python DCT_low_FBS_infer.py
 </code></pre>
-
 (2) for I2I application of text-driven image style translation achieved using high-FBS mode, run the **DCT_high_FBS_infer.py** script:
 <pre><code>
 python DCT_high_FBS_infer.py
 </code></pre>
-
 (3) for I2I application of layout-guided text-driven I2I translation achieved using mid-FBS mode, run the **DCT_mid_FBS_infer.py** script:
 <pre><code>
 python DCT_mid_FBS_infer.py
 </code></pre>
+
+# Results
